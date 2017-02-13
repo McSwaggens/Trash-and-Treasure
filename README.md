@@ -10,6 +10,8 @@
   - Pixel dungeon (MOD)
   - Survival
   - Crash reporter
+  - Plugin Framework
+  - Launcher (Fossickers Doom Launcher)
 - Java Script
   - Smart mirror
   - Dirty Bear interpreter (Language)
@@ -33,6 +35,7 @@
   - Raspberry Pi assistant
   - WolfLang (Language)
   - JsonDB (custom for Asher)
+  - ButterBot (Discord)
 - Shell script
   - Asher AI install scripts
   - Worker shell version
