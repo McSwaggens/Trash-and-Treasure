@@ -1,0 +1,133 @@
+body {
+  background: #282A3A;
+  overflow: hidden;
+}
+.solar div {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-animation-name: rotate;
+          animation-name: rotate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+.solar div:after {
+  content: '';
+  width: 20px;
+  height: 20px;
+  background: #ddd;
+  position: absolute;
+  border-radius: 50%;
+}
+.solar div.Mercury {
+  -webkit-animation-duration: 45s;
+          animation-duration: 45s;
+}
+.solar div.Mercury:after {
+  left: 3vw;
+  width: 10px;
+  height: 10px;
+  background: #ECBF64;
+}
+.solar div.Venus {
+  -webkit-animation-duration: 35s;
+          animation-duration: 35s;
+}
+.solar div.Venus:after {
+  left: 5vw;
+  background: #CBA036;
+}
+.solar div.Earth {
+  -webkit-animation-duration: 29s;
+          animation-duration: 29s;
+}
+.solar div.Earth:after {
+  left: 10vw;
+  background: #BEC75F;
+}
+.solar div.Mars {
+  -webkit-animation-duration: 24s;
+          animation-duration: 24s;
+}
+.solar div.Mars:after {
+  left: 14vw;
+  width: 30px;
+  height: 30px;
+  background: #E15B37;
+}
+.solar div.Jupiter {
+  -webkit-animation-duration: 13s;
+          animation-duration: 13s;
+}
+.solar div.Jupiter:after {
+  left: 20vw;
+  width: 50px;
+  height: 50px;
+  background: #F08348;
+}
+.solar div.Saturn {
+  -webkit-animation-duration: 9s;
+          animation-duration: 9s;
+}
+.solar div.Saturn:after {
+  left: 28vw;
+  width: 40px;
+  height: 40px;
+  background: #EABC55;
+}
+.solar div.Uranus {
+  -webkit-animation-duration: 18s;
+          animation-duration: 18s;
+}
+.solar div.Uranus:after {
+  left: 34vw;
+  width: 30px;
+  height: 30px;
+  background: #92BEBF;
+}
+.solar div.Neptune {
+  -webkit-animation-duration: 20s;
+          animation-duration: 20s;
+}
+.solar div.Neptune:after {
+  left: 39vw;
+  background: #9ABCDD;
+}
+#sky {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+#sky #canvas {
+  position: absolute;
+  display: none;
+}
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  to {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+@keyframes rotate {
+  from {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  to {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
