@@ -1,0 +1,9 @@
+take "Letter: ", letter$
+alpha = asc(letter$)
+slur alpha
+take "Private code: ", code$
+num = val(code$)
+alpha = alpha * num
+alpha = alpha + num
+alpha = alpha * alpha
+slur alpha
